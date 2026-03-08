@@ -732,14 +732,14 @@
                     <p class="timeline-period">2018 – 2025</p>
                     <div class="timeline-content">
                         <h3>🏭 Opérateur de Production</h3>
-                        <p class="org">Michelin · CDI</p>
+                        <p class="org">Michelin</p>
                         <p>7 ans dans un environnement industriel international à haute exigence qualité. Déclic pour la cybersécurité en 2024, suivi d'une reconversion soutenue par Michelin jusqu'en octobre 2026.</p>
                     </div>
                 </div>
 
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
-                    <p class="timeline-period">2024</p>
+                    <p class="timeline-period">2025</p>
                     <div class="timeline-content">
                         <h3>🎯 Premiers pas en Cybersécurité</h3>
                         <p class="org">TryHackMe</p>
@@ -762,7 +762,7 @@
                     <p class="timeline-period">Nov 2025 – Juin 2026</p>
                     <div class="timeline-content">
                         <h3>☁️ Déclic AWS & Formation Full-Stack</h3>
-                        <p class="org">Jedha · Bootcamp Full-Stack (en cours)</p>
+                        <p class="org">Jedha · Full-Stack (en cours)</p>
                         <p>C'est au chapitre AWS de cette formation que tout s'est cristallisé : l'architecture cloud vue sous l'angle sécurité. Depuis, approfondissement intensif sur AWS en parallèle — VPC, IAM, EC2, S3, Cloud Quest validé.</p>
                     </div>
                 </div>
@@ -873,52 +873,27 @@
     <section id="projets">
         <div class="container">
             <p class="section-label">// 03 · Projets</p>
-            <h2 class="section-title">Projets GitHub.<br>Travail réel et documenté.</h2>
+            <h2 class="section-title">Projets GitHub.<br>En cours de construction.</h2>
 
-            <div style="display: flex; flex-direction: column; gap: 20px;">
+            <div class="projects-note">
+                <div class="icon">🔧</div>
+                <h3>Les projets arrivent bientôt</h3>
+                <p>Je préfère publier du travail réel et documenté plutôt que des descriptions vagues. Les projets ci-dessous sont en cours de réalisation et seront publiés sur GitHub avec schémas d'architecture, choix techniques et code commenté.</p>
 
-                <!-- PROJET 01 TERMINÉ -->
-                <div style="background: var(--card); border: 1px solid rgba(52,211,153,0.3); border-radius: 14px; padding: 32px;">
-                    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;">
-                        <div style="display: flex; align-items: center; gap: 12px;">
-                            <span style="font-size: 1.5rem;">🔐</span>
-                            <div>
-                                <p style="font-family: 'Space Mono', monospace; font-size: 0.68rem; color: #34d399; letter-spacing: 0.1em; margin-bottom: 4px;">PROJET 01 · TERMINÉ</p>
-                                <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--text);">Sécurisation d'un compte AWS Free Tier</h3>
-                            </div>
-                        </div>
-                        <a href="https://github.com/Jimmy-Barbier/projet-01-aws-account-security" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; background: rgba(52,211,153,0.1); border: 1px solid rgba(52,211,153,0.3); border-radius: 8px; color: #34d399; text-decoration: none; font-family: 'Space Mono', monospace; font-size: 0.72rem; font-weight: 700; transition: all 0.3s ease;" onmouseover="this.style.background='rgba(52,211,153,0.2)'" onmouseout="this.style.background='rgba(52,211,153,0.1)'">
-                            Voir sur GitHub →
-                        </a>
+                <div class="project-incoming">
+                    <div class="project-pill">
+                        <div class="pill-dot"></div>
+                        <span>VPC Multi-AZ — Infrastructure complète via console AWS (subnets pub/priv, IGW, NAT, NACL, Load Balancer, Auto Scaling)</span>
                     </div>
-                    <p style="color: var(--text-dim); font-size: 0.95rem; line-height: 1.65; margin-bottom: 16px;">
-                        Mise en place des bonnes pratiques de sécurité et de gouvernance sur un compte AWS, conformément aux recommandations du AWS Well-Architected Framework. MFA root, utilisateur IAM admin dédié, politique de mot de passe renforcée, Zero-Spend Budget, CloudTrail multirégion et Cost Explorer.
-                    </p>
-                    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-                        <span style="font-family: 'Space Mono', monospace; font-size: 0.68rem; padding: 4px 10px; border-radius: 6px; background: rgba(56,189,248,0.08); border: 1px solid rgba(56,189,248,0.2); color: var(--text-dim);">IAM</span>
-                        <span style="font-family: 'Space Mono', monospace; font-size: 0.68rem; padding: 4px 10px; border-radius: 6px; background: rgba(56,189,248,0.08); border: 1px solid rgba(56,189,248,0.2); color: var(--text-dim);">MFA</span>
-                        <span style="font-family: 'Space Mono', monospace; font-size: 0.68rem; padding: 4px 10px; border-radius: 6px; background: rgba(56,189,248,0.08); border: 1px solid rgba(56,189,248,0.2); color: var(--text-dim);">CloudTrail</span>
-                        <span style="font-family: 'Space Mono', monospace; font-size: 0.68rem; padding: 4px 10px; border-radius: 6px; background: rgba(56,189,248,0.08); border: 1px solid rgba(56,189,248,0.2); color: var(--text-dim);">S3</span>
-                        <span style="font-family: 'Space Mono', monospace; font-size: 0.68rem; padding: 4px 10px; border-radius: 6px; background: rgba(56,189,248,0.08); border: 1px solid rgba(56,189,248,0.2); color: var(--text-dim);">Cost Explorer</span>
-                        <span style="font-family: 'Space Mono', monospace; font-size: 0.68rem; padding: 4px 10px; border-radius: 6px; background: rgba(56,189,248,0.08); border: 1px solid rgba(56,189,248,0.2); color: var(--text-dim);">Security by Design</span>
+                    <div class="project-pill">
+                        <div class="pill-dot"></div>
+                        <span>VPC Multi-AZ — Même architecture reproductible en Terraform (Infrastructure as Code)</span>
+                    </div>
+                    <div class="project-pill">
+                        <div class="pill-dot"></div>
+                        <span>Sécurisation compte AWS Free Tier — MFA, compte admin dédié, no root usage, politiques IAM best practices</span>
                     </div>
                 </div>
-
-                <!-- PROJETS À VENIR -->
-                <div style="background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 32px;">
-                    <p style="font-family: 'Space Mono', monospace; font-size: 0.72rem; color: var(--text-muted); margin-bottom: 16px;">PROJETS À VENIR</p>
-                    <div style="display: flex; flex-direction: column; gap: 12px;">
-                        <div style="display: flex; align-items: center; gap: 12px; background: rgba(56,189,248,0.04); border: 1px solid var(--border); border-radius: 10px; padding: 14px 20px; font-size: 0.88rem; color: var(--text-dim);">
-                            <div style="width: 8px; height: 8px; background: var(--accent); border-radius: 50%; flex-shrink: 0; opacity: 0.4;"></div>
-                            <span><strong style="color: var(--text-dim);">Projet 02</strong> — VPC Multi-AZ via console AWS (subnets pub/priv, IGW, NAT, NACL, Load Balancer, Auto Scaling)</span>
-                        </div>
-                        <div style="display: flex; align-items: center; gap: 12px; background: rgba(56,189,248,0.04); border: 1px solid var(--border); border-radius: 10px; padding: 14px 20px; font-size: 0.88rem; color: var(--text-dim);">
-                            <div style="width: 8px; height: 8px; background: var(--accent); border-radius: 50%; flex-shrink: 0; opacity: 0.4;"></div>
-                            <span><strong style="color: var(--text-dim);">Projet 03</strong> — Même architecture VPC reproductible en Terraform (Infrastructure as Code)</span>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
@@ -1014,7 +989,7 @@
                 Je recherche un poste de Cloud Engineer junior en remote ou hybride depuis Troyes (Grand Est). Disponible à partir d'octobre 2026.
             </p>
             <div class="contact-links">
-                <a href="/cdn-cgi/l/email-protection#f3999a9e919281919a9681c2c6c3c2b3949e929a9fdd909c9e" class="contact-btn primary">
+                <a href="mailto:jimbarbier1501@gmail.com" class="contact-btn primary">
                     📧 M'écrire
                 </a>
                 <a href="https://www.linkedin.com/in/jimmy-barbier-89740539a/" target="_blank" class="contact-btn secondary">
@@ -1034,7 +1009,7 @@
     <p>Jimmy Barbier · Cloud Engineer AWS · 2026 · Troyes, Grand Est</p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
     // CURSEUR CUSTOM
     const cursor = document.getElementById('cursor');
     const cursorRing = document.getElementById('cursorRing');
@@ -1149,4 +1124,10 @@
         observer.observe(el);
     });
 
-    document.querySele
+    document.querySelectorAll('.skill-card, .cert-card').forEach((el, i) => {
+        el.dataset.delay = i * 80;
+        observer.observe(el);
+    });
+</script>
+</body>
+</html>
