@@ -324,28 +324,36 @@
                     </div>
                 </div>
 
-                <!-- PROJET 02 EN COURS -->
-                <div style="background:var(--card);border:1px solid rgba(251,191,36,0.3);border-radius:14px;padding:32px;">
+                <!-- PROJET 02 TERMINÉ -->
+                <div style="background:var(--card);border:1px solid rgba(52,211,153,0.3);border-radius:14px;padding:32px;">
                     <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:16px;">
                         <div style="display:flex;align-items:center;gap:12px;">
                             <span style="font-size:1.5rem;">🏗️</span>
                             <div>
-                                <p style="font-family:'Space Mono',monospace;font-size:0.68rem;color:#fbbf24;letter-spacing:0.1em;margin-bottom:4px;">PROJET 02 · EN COURS</p>
+                                <p style="font-family:'Space Mono',monospace;font-size:0.68rem;color:#34d399;letter-spacing:0.1em;margin-bottom:4px;">PROJET 02 · TERMINÉ</p>
                                 <h3 style="font-size:1.1rem;font-weight:700;color:var(--text);">Infrastructure AWS VPC Multi-AZ</h3>
                             </div>
                         </div>
+                        <a href="https://github.com/Jimmy-Barbier/projet-02-vpc-multi-az" target="_blank"
+                           style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:rgba(52,211,153,0.1);border:1px solid rgba(52,211,153,0.3);border-radius:8px;color:#34d399;text-decoration:none;font-family:'Space Mono',monospace;font-size:0.72rem;font-weight:700;">
+                            Voir sur GitHub →
+                        </a>
                     </div>
                     <p style="color:var(--text-dim);font-size:0.95rem;line-height:1.65;margin-bottom:16px;">
-                        Architecture réseau AWS complète en cours de construction : VPC Multi-AZ avec sous-réseaux publics et privés, Internet Gateway, NAT Gateway, NACL, Security Groups, Application Load Balancer et Auto Scaling. Le tout sera intégralement provisionné via Terraform.
+                        Infrastructure AWS production-ready déployée intégralement via Terraform — architecture modulaire en 13 modules indépendants. VPC Multi-AZ avec subnets publics et privés, Application Load Balancer, Auto Scaling Group, RDS MySQL Multi-AZ, WAF avec protection SQLi et rate limiting, Secrets Manager pour les credentials, IAM Role EC2 avec least privilege, et backend Terraform sur S3 + DynamoDB. Application Flask de gestion de contacts connectée à RDS MySQL.
                     </p>
                     <div style="display:flex;flex-wrap:wrap;gap:8px;">
                         <span style="font-family:'Space Mono',monospace;font-size:0.68rem;padding:4px 10px;border-radius:6px;background:rgba(56,189,248,0.08);border:1px solid rgba(56,189,248,0.2);color:var(--text-dim);">Terraform</span>
                         <span style="font-family:'Space Mono',monospace;font-size:0.68rem;padding:4px 10px;border-radius:6px;background:rgba(56,189,248,0.08);border:1px solid rgba(56,189,248,0.2);color:var(--text-dim);">VPC Multi-AZ</span>
+                        <span style="font-family:'Space Mono',monospace;font-size:0.68rem;padding:4px 10px;border-radius:6px;background:rgba(56,189,248,0.08);border:1px solid rgba(56,189,248,0.2);color:var(--text-dim);">RDS MySQL</span>
                         <span style="font-family:'Space Mono',monospace;font-size:0.68rem;padding:4px 10px;border-radius:6px;background:rgba(56,189,248,0.08);border:1px solid rgba(56,189,248,0.2);color:var(--text-dim);">ALB</span>
                         <span style="font-family:'Space Mono',monospace;font-size:0.68rem;padding:4px 10px;border-radius:6px;background:rgba(56,189,248,0.08);border:1px solid rgba(56,189,248,0.2);color:var(--text-dim);">Auto Scaling</span>
-                        <span style="font-family:'Space Mono',monospace;font-size:0.68rem;padding:4px 10px;border-radius:6px;background:rgba(56,189,248,0.08);border:1px solid rgba(56,189,248,0.2);color:var(--text-dim);">NACL</span>
+                        <span style="font-family:'Space Mono',monospace;font-size:0.68rem;padding:4px 10px;border-radius:6px;background:rgba(56,189,248,0.08);border:1px solid rgba(56,189,248,0.2);color:var(--text-dim);">WAF</span>
+                        <span style="font-family:'Space Mono',monospace;font-size:0.68rem;padding:4px 10px;border-radius:6px;background:rgba(56,189,248,0.08);border:1px solid rgba(56,189,248,0.2);color:var(--text-dim);">Secrets Manager</span>
+                        <span style="font-family:'Space Mono',monospace;font-size:0.68rem;padding:4px 10px;border-radius:6px;background:rgba(56,189,248,0.08);border:1px solid rgba(56,189,248,0.2);color:var(--text-dim);">IAM</span>
+                        <span style="font-family:'Space Mono',monospace;font-size:0.68rem;padding:4px 10px;border-radius:6px;background:rgba(56,189,248,0.08);border:1px solid rgba(56,189,248,0.2);color:var(--text-dim);">Python Flask</span>
                         <span style="font-family:'Space Mono',monospace;font-size:0.68rem;padding:4px 10px;border-radius:6px;background:rgba(56,189,248,0.08);border:1px solid rgba(56,189,248,0.2);color:var(--text-dim);">Security Groups</span>
-                        <span style="font-family:'Space Mono',monospace;font-size:0.68rem;padding:4px 10px;border-radius:6px;background:rgba(56,189,248,0.08);border:1px solid rgba(56,189,248,0.2);color:var(--text-dim);">NAT Gateway</span>
+                        <span style="font-family:'Space Mono',monospace;font-size:0.68rem;padding:4px 10px;border-radius:6px;background:rgba(56,189,248,0.08);border:1px solid rgba(56,189,248,0.2);color:var(--text-dim);">NACLs</span>
                     </div>
                 </div>
 
