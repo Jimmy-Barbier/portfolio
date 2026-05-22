@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>CV - Jimmy Barbier - Cloud Engineer AWS Junior</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root {
+    --dark:#1a2332; --dark2:#243040; --accent:#FF9900; --accent2:#e8860a;
+    --light:#f4f6f8; --text:#1a2332; --muted:#5a6a7a; --white:#ffffff;
+    --border:#dce3ea; --green:#2e7d52; --blue:#1a5fa8; --orange:#c4600a;
+  }
+  body {
+    font-family:'IBM Plex Sans',sans-serif;
+    background:#e8ecf0;
+    display:flex; justify-content:center; align-items:flex-start;
+    min-height:100vh; padding:20px;
+  }
+  .page {
+    width:210mm; height:297mm; overflow:hidden;
+    background:var(--white); display:flex; flex-direction:column;
+    box-shadow:0 8px 40px rgba(0,0,0,0.18);
+  }
+
+  /* EN-TÊTE */
+  .header { display:grid; grid-template-columns:175px 1fr; flex-shrink:0; }
+  .header-left {
+    background:var(--dark); padding:16px 16px;
+    display:flex; flex-direction:column; justify-content:center;
+  }
+  .name-first { font-size:22px; font-weight:300; letter-spacing:1px; color:#c8d8e8; }
+  .name-last  { font-size:28px; font-weight:700; color:var(--accent); letter-spacing:2px; }
+  .header-right {
+    background:var(--dark2); padding:16px 24px;
+    display:flex; flex-direction:column; justify-content:center; gap:6px;
+  }
+  .header-title { font-size:24px; font-weight:700; color:var(--white); line-height:1.1; }
+  .header-dispo { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+  .header-dispo span { font-size:14px; color:#8aa4bc; font-weight:500; letter-spacing:1px; text-transform:uppercase; }
+  .header-dispo .dot { color:var(--accent); font-size:11px; }
+
+  /* BODY */
+  .body { display:grid; grid-template-columns:175px 1fr; flex:1; overflow:hidden; }
+
+  /* SIDEBAR */
+  .sidebar {
+    background:var(--dark); color:var(--white);
+    padding:16px 16px; display:flex; flex-direction:column; gap:16px; overflow:hidden;
+  }
+  .s-section { display:flex; flex-direction:column; gap:5px; }
+  .s-title {
+    font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:2px;
+    color:var(--accent); border-bottom:1px solid rgba(255,153,0,0.25);
+    padding-bottom:4px; margin-bottom:4px;
+  }
+  .contact-item { font-size:10.5px; color:#a8bece; line-height:1.65; }
+  .contact-item a { color:#7eb8d8; text-decoration:none; }
+
+  .cert-item { margin-bottom:10px; }
+  .cert-name { font-size:10.5px; font-weight:600; color:var(--white); line-height:1.3; }
+  .cert-org  { font-size:9.5px; color:#7a9ab5; }
+  .cert-date { font-size:9px; color:#5a7a95; font-family:'IBM Plex Mono',monospace; }
+  .cert-badge {
+    display:inline-block; font-size:8px; padding:1px 5px; border-radius:2px;
+    margin-top:2px; font-weight:600; letter-spacing:0.5px;
+  }
+  .badge-ok   { background:rgba(46,125,82,0.25);  color:#5dba88; border:1px solid rgba(46,125,82,0.4); }
+  .badge-prog { background:rgba(255,153,0,0.15);  color:var(--accent); border:1px solid rgba(255,153,0,0.3); }
+  .badge-form { background:rgba(26,95,168,0.2);   color:#6ab0e8; border:1px solid rgba(26,95,168,0.35); }
+
+  .skill-group { margin-bottom:9px; }
+  .skill-group-name { font-size:9.5px; font-weight:600; color:#8abedc; margin-bottom:3px; }
+  .skill-tags { display:flex; flex-wrap:wrap; gap:3px; }
+  .skill-tag {
+    font-size:9px; background:rgba(255,255,255,0.07); color:#a8c8de;
+    padding:2px 5px; border-radius:2px; border:1px solid rgba(255,255,255,0.1);
+  }
+
+  /* MAIN */
+  .main { padding:16px 24px; display:flex; flex-direction:column; gap:13px; overflow:hidden; }
+  .m-section { display:flex; flex-direction:column; gap:7px; }
+  .m-title {
+    font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:2.5px;
+    color:var(--dark); border-bottom:2px solid var(--accent); padding-bottom:4px;
+  }
+  .profil-text { font-size:12.5px; line-height:1.65; color:var(--text); }
+
+  .project-item { margin-bottom:8px; }
+  .project-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:2px; }
+  .project-name { font-size:13px; font-weight:600; color:var(--dark); }
+  .project-name a { color:var(--dark); text-decoration:none; }
+  .project-status {
+    font-size:7.5px; font-weight:700; letter-spacing:0.8px;
+    padding:2px 7px; border-radius:2px; text-transform:uppercase; white-space:nowrap;
+  }
+  .status-cours   { background:rgba(255,153,0,0.12); color:var(--orange); border:1px solid rgba(255,153,0,0.3); }
+  .status-publie  { background:rgba(46,125,82,0.1);  color:var(--green);  border:1px solid rgba(46,125,82,0.3); }
+  .status-termine { background:rgba(26,95,168,0.1);  color:var(--blue);   border:1px solid rgba(26,95,168,0.3); }
+
+  .project-tags { display:flex; flex-wrap:wrap; gap:3px; margin-bottom:3px; }
+  .project-tag {
+    font-size:10px; font-family:'IBM Plex Mono',monospace;
+    background:var(--light); color:var(--muted);
+    padding:1px 5px; border-radius:2px; border:1px solid var(--border);
+  }
+  .project-desc { font-size:11.5px; line-height:1.55; color:#3a4a5a; }
+
+  .exp-item { margin-bottom:9px; }
+  .exp-header { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:1px; }
+  .exp-title   { font-size:13px; font-weight:600; color:var(--dark); }
+  .exp-dates   { font-size:11px; font-family:'IBM Plex Mono',monospace; color:var(--muted); white-space:nowrap; }
+  .exp-company { font-size:11.5px; color:var(--accent2); font-weight:500; margin-bottom:3px; }
+  .exp-desc    { font-size:11.5px; line-height:1.55; color:#3a4a5a; }
+
+  @media print {
+    body { background:white; padding:0; }
+    .page { box-shadow:none; width:100%; height:297mm; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="header-left">
+      <div class="name-first">Jimmy</div>
+      <div class="name-last">BARBIER</div>
+    </div>
+    <div class="header-right">
+      <div class="header-title">Cloud Engineer AWS Junior</div>
+      <div class="header-dispo">
+        <span>Disponible</span><span class="dot">·</span>
+        <span>Octobre 2026</span><span class="dot">·</span>
+        <span>Remote / Hybride</span><span class="dot">·</span>
+        <span>Grand Est</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="body">
+    <aside class="sidebar">
+
+      <div class="s-section">
+        <div class="s-title">Contact</div>
+        <div class="contact-item">06 24 72 93 97</div>
+        <div class="contact-item"><a href="mailto:jimbarbier1501@gmail.com">jimbarbier1501@gmail.com</a></div>
+        <div class="contact-item">Troyes, Grand Est</div>
+        <div class="contact-item"><a href="https://www.linkedin.com/in/jimmy-barbier-89740539a/" target="_blank">LinkedIn</a></div>
+        <div class="contact-item"><a href="https://jimmy-barbier.github.io/portfolio" target="_blank">Portfolio GitHub Pages</a></div>
+        <div class="contact-item"><a href="https://github.com/Jimmy-Barbier" target="_blank">GitHub</a></div>
+      </div>
+
+      <div class="s-section">
+        <div class="s-title">Certifications &amp; Formations</div>
+        <div class="cert-item">
+          <div class="cert-name"><a href="https://www.credly.com/badges/01670bee-b653-4744-ba44-3c68ef7bf819/public_url" target="_blank" style="color:var(--white);text-decoration:none;">AWS Cloud Practitioner</a></div>
+          <div class="cert-org">Amazon Web Services</div>
+          <div class="cert-date">Avril 2026</div>
+          <span class="cert-badge badge-ok">Certifié</span>
+        </div>
+        <div class="cert-item">
+          <div class="cert-name">AWS Solutions Architect Associate</div>
+          <div class="cert-org">Amazon Web Services</div>
+          <div class="cert-date">Cible : Août 2026</div>
+          <span class="cert-badge badge-prog">En préparation</span>
+        </div>
+        <div class="cert-item">
+          <div class="cert-name">Cyber Full-Stack</div>
+          <div class="cert-org">Jedha Bootcamp</div>
+          <div class="cert-date">Juin 2026</div>
+          <span class="cert-badge badge-form">Formation</span>
+        </div>
+        <div class="cert-item">
+          <div class="cert-name">Cyber Essentials</div>
+          <div class="cert-org">Jedha Bootcamp</div>
+          <div class="cert-date">Nov 2025</div>
+          <span class="cert-badge badge-ok">Obtenu</span>
+        </div>
+      </div>
+
+      <div class="s-section">
+        <div class="s-title">Compétences</div>
+        <div class="skill-group">
+          <div class="skill-group-name">AWS Cloud</div>
+          <div class="skill-tags">
+            <span class="skill-tag">VPC</span><span class="skill-tag">EC2</span>
+            <span class="skill-tag">S3</span><span class="skill-tag">IAM</span>
+            <span class="skill-tag">ALB</span><span class="skill-tag">Auto Scaling</span>
+            <span class="skill-tag">NAT Gateway</span><span class="skill-tag">NACL</span>
+            <span class="skill-tag">WAF</span><span class="skill-tag">CloudTrail</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-name">Infrastructure as Code</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Terraform</span><span class="skill-tag">HCL</span>
+            <span class="skill-tag">Modules</span><span class="skill-tag">Remote state S3</span>
+            <span class="skill-tag">DynamoDB</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-name">Sécurité Cloud</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Security by Design</span><span class="skill-tag">MFA</span>
+            <span class="skill-tag">Moindre privilège</span><span class="skill-tag">Hardening</span>
+            <span class="skill-tag">Analyse menaces</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-name">Systèmes &amp; Réseaux</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Linux</span><span class="skill-tag">Bash</span>
+            <span class="skill-tag">TCP/IP</span><span class="skill-tag">DNS</span>
+            <span class="skill-tag">Firewalls</span><span class="skill-tag">VPN</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-name">Conteneurisation</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Docker</span><span class="skill-tag">Docker Swarm</span>
+          </div>
+        </div>
+      </div>
+
+    </aside>
+
+    <main class="main">
+
+      <div class="m-section">
+        <div class="m-title">Profil</div>
+        <div class="profil-text">
+          AWS Cloud Practitioner certifié, préparation AWS Solutions Architect Associate en cours. En reconversion active vers le Cloud Engineering avec une double sensibilité infrastructure et sécurité. Parcours atypique - militaire, logistique, industrie - qui apporte rigueur opérationnelle, sens des priorités et gestion sous pression à des environnements cloud exigeants.
+        </div>
+      </div>
+
+      <div class="m-section">
+        <div class="m-title">Projets</div>
+
+        <div class="project-item">
+          <div class="project-header">
+            <div class="project-name"><a href="https://github.com/Jimmy-Barbier/projet-02-vpc-multi-az" target="_blank">Infrastructure AWS VPC Multi-AZ</a></div>
+            <span class="project-status status-termine">Terminé</span>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Terraform</span><span class="project-tag">VPC</span>
+            <span class="project-tag">RDS</span><span class="project-tag">ALB</span>
+            <span class="project-tag">Security Groups</span><span class="project-tag">NAT Gateway</span>
+          </div>
+          <div class="project-desc">Architecture réseau AWS complète provisionnée via Terraform : VPC Multi-AZ, sous-réseaux publics et privés, Internet Gateway, NAT Gateway, NACL, Security Groups, ALB et Auto Scaling.</div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-header">
+            <div class="project-name"><a href="https://play.google.com/store/apps/details?id=com.awspractitionerfr" target="_blank">AWS Practitioner FR - Google Play</a></div>
+            <span class="project-status status-publie">Publié</span>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">React Native</span><span class="project-tag">Expo</span>
+            <span class="project-tag">Google Play Console</span>
+          </div>
+          <div class="project-desc">Aucune app de révision CLF-C02 en français n'étant satisfaisante, j'ai construit la mienne. 13 modules de cours, 30 flashcards, 3 examens blancs chronométrés avec correction détaillée et statistiques de progression.</div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-header">
+            <div class="project-name"><a href="https://github.com/Jimmy-Barbier/projet-01-aws-account-security" target="_blank">Hardening compte AWS racine</a></div>
+            <span class="project-status status-termine">Terminé</span>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">IAM</span><span class="project-tag">CloudTrail</span>
+            <span class="project-tag">Well-Architected</span>
+          </div>
+          <div class="project-desc">Hardening complet d'un compte AWS : MFA root, IAM admin dédié, politique de mot de passe renforcée, Zero-Spend Budget, CloudTrail multirégion.</div>
+        </div>
+
+        <div class="project-item">
+          <div class="project-header">
+            <div class="project-name"><a href="https://github.com/Jimmy-Barbier/terraform-aws-library" target="_blank">terraform-aws-library</a></div>
+            <span class="project-status status-cours">En cours</span>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Terraform</span><span class="project-tag">IAM</span>
+            <span class="project-tag">S3</span><span class="project-tag">EC2</span>
+            <span class="project-tag">SSM</span><span class="project-tag">Modules réutilisables</span>
+          </div>
+          <div class="project-desc">Dépôt de modules Terraform réutilisables documentés et testés : IAM, EC2 avec rôle SSM, S3 avec versioning et hébergement statique.</div>
+        </div>
+
+      </div>
+
+      <div class="m-section">
+        <div class="m-title">Expériences</div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-title">Cloud Engineer en formation</div>
+            <div class="exp-dates">2025 - 2026</div>
+          </div>
+          <div class="exp-company">Michelin (financement reconversion)</div>
+          <div class="exp-desc">Reconversion vers le Cloud AWS financée par Michelin. Formation Jedha Bootcamp Full-Stack Cybersecurity, certifications AWS, projets d'infrastructure documentés sur GitHub.</div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-title">Opérateur de Production</div>
+            <div class="exp-dates">2018 - 2025</div>
+          </div>
+          <div class="exp-company">Michelin</div>
+          <div class="exp-desc">7 ans en environnement industriel international. Gestion de production, respect des engagements opérationnels, rigueur et fiabilité en environnement haute exigence.</div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-title">Responsable de Quai</div>
+            <div class="exp-dates">2012 - 2017</div>
+          </div>
+          <div class="exp-company">FedEx Express France</div>
+          <div class="exp-desc">Évolution de livreur à chef de quai. Gestion de flux logistiques, respect des délais de livraison, encadrement d'équipe en environnement haute cadence.</div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-title">Sapeur Parachutiste</div>
+            <div class="exp-dates">2008 - 2011</div>
+          </div>
+          <div class="exp-company">17e RGP, Armée de Terre</div>
+          <div class="exp-desc">Formation d'élite. Discipline opérationnelle, gestion du stress et respect des protocoles en environnements critiques.</div>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+
+</div>
+</body>
+</html>
