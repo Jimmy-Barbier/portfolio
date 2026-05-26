@@ -44,6 +44,8 @@
         .hero-value { display: inline-block; background: var(--glow); border: 1px solid var(--border); border-radius: 12px; padding: 20px 28px; font-size: 1rem; line-height: 1.7; color: var(--text-dim); max-width: 600px; opacity: 0; animation: fadeUp 0.8s 0.8s forwards; margin-bottom: 40px; }
         .hero-value strong { color: var(--accent); }
         .hero-badges { display: flex; gap: 12px; flex-wrap: wrap; opacity: 0; animation: fadeUp 0.8s 1s forwards; }
+        .cv-btn { font-family: 'Space Mono', monospace; font-size: 0.72rem; padding: 8px 18px; border-radius: 20px; border: 1px solid rgba(56,189,248,0.55); color: var(--accent); background: rgba(56,189,248,0.1); letter-spacing: 0.05em; text-decoration: none; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 7px; font-weight: 700; }
+        .cv-btn:hover { background: rgba(56,189,248,0.22); border-color: var(--accent); box-shadow: 0 0 22px rgba(56,189,248,0.28); transform: translateY(-2px); }
         .badge { font-family: 'Space Mono', monospace; font-size: 0.72rem; padding: 6px 14px; border-radius: 20px; border: 1px solid var(--border); color: var(--accent2); background: rgba(56,189,248,0.06); letter-spacing: 0.05em; }
         .hero-scroll { position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 8px; opacity: 0; animation: fadeUp 0.8s 1.4s forwards; }
         .scroll-line { width: 1px; height: 60px; background: linear-gradient(to bottom, var(--accent), transparent); animation: scrollPulse 2s infinite; }
@@ -149,6 +151,7 @@
                 <span class="badge">Linux</span>
                 <span class="badge">Jedha Cybersécurité</span>
                 <span class="badge">Remote / Grand Est</span>
+                <a href="CV_Jimmy_Barbier.pdf" target="_blank" class="cv-btn">📄 Voir mon CV</a>
             </div>
         </div>
         <div class="hero-scroll">
@@ -499,6 +502,7 @@
             <div class="contact-links">
                 <a href="mailto:jimbarbier1501@gmail.com" class="contact-btn primary">📧 M'écrire</a>
                 <a href="https://www.linkedin.com/in/jimmy-barbier-89740539a/" target="_blank" class="contact-btn secondary">💼 LinkedIn</a>
+                <a href="CV_Jimmy_Barbier.pdf" target="_blank" class="cv-btn">📄 Mon CV</a>
             </div>
             <div class="contact-dispo">
                 <div class="dispo-dot"></div>
