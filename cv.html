@@ -24,7 +24,7 @@
   }
 
   /* EN-TÊTE */
-  .header { display:grid; grid-template-columns:175px 1fr; flex-shrink:0; }
+  .header { display:grid; grid-template-columns:205px 1fr; flex-shrink:0; }
   .header-left {
     background:var(--dark); padding:16px 16px;
     display:flex; flex-direction:column; justify-content:center;
@@ -41,77 +41,78 @@
   .header-dispo .dot { color:var(--accent); font-size:11px; }
 
   /* BODY */
-  .body { display:grid; grid-template-columns:175px 1fr; flex:1; overflow:hidden; }
+  .body { display:grid; grid-template-columns:205px 1fr; flex:1; overflow:hidden; }
 
   /* SIDEBAR */
   .sidebar {
     background:var(--dark); color:var(--white);
-    padding:16px 16px; display:flex; flex-direction:column; gap:16px; overflow:hidden;
+    padding:13px 14px; display:flex; flex-direction:column; gap:12px; overflow:hidden;
   }
-  .s-section { display:flex; flex-direction:column; gap:5px; }
+  .s-section { display:flex; flex-direction:column; gap:4px; }
   .s-title {
     font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:2px;
     color:var(--accent); border-bottom:1px solid rgba(255,153,0,0.25);
-    padding-bottom:4px; margin-bottom:4px;
+    padding-bottom:3px; margin-bottom:3px;
   }
-  .contact-item { font-size:10.5px; color:#a8bece; line-height:1.65; }
+  .contact-item { font-size:10px; color:#a8bece; line-height:1.6; }
   .contact-item a { color:#7eb8d8; text-decoration:none; }
 
-  .cert-item { margin-bottom:10px; }
-  .cert-name { font-size:10.5px; font-weight:600; color:var(--white); line-height:1.3; }
-  .cert-org  { font-size:9.5px; color:#7a9ab5; }
-  .cert-date { font-size:9px; color:#5a7a95; font-family:'IBM Plex Mono',monospace; }
+  .cert-item { margin-bottom:8px; }
+  .cert-name { font-size:10px; font-weight:600; color:var(--white); line-height:1.3; }
+  .cert-name a { color:var(--white); text-decoration:none; }
+  .cert-org  { font-size:9px; color:#7a9ab5; }
+  .cert-date { font-size:8.5px; color:#5a7a95; font-family:'IBM Plex Mono',monospace; }
   .cert-badge {
-    display:inline-block; font-size:8px; padding:1px 5px; border-radius:2px;
+    display:inline-block; font-size:7.5px; padding:1px 5px; border-radius:2px;
     margin-top:2px; font-weight:600; letter-spacing:0.5px;
   }
   .badge-ok   { background:rgba(46,125,82,0.25);  color:#5dba88; border:1px solid rgba(46,125,82,0.4); }
   .badge-prog { background:rgba(255,153,0,0.15);  color:var(--accent); border:1px solid rgba(255,153,0,0.3); }
   .badge-form { background:rgba(26,95,168,0.2);   color:#6ab0e8; border:1px solid rgba(26,95,168,0.35); }
 
-  .skill-group { margin-bottom:9px; }
-  .skill-group-name { font-size:9.5px; font-weight:600; color:#8abedc; margin-bottom:3px; }
-  .skill-tags { display:flex; flex-wrap:wrap; gap:3px; }
+  .skill-group { margin-bottom:7px; }
+  .skill-group-name { font-size:9px; font-weight:600; color:#8abedc; margin-bottom:2px; }
+  .skill-tags { display:flex; flex-wrap:wrap; gap:2px; }
   .skill-tag {
-    font-size:9px; background:rgba(255,255,255,0.07); color:#a8c8de;
-    padding:2px 5px; border-radius:2px; border:1px solid rgba(255,255,255,0.1);
+    font-size:8.5px; background:rgba(255,255,255,0.07); color:#a8c8de;
+    padding:1px 4px; border-radius:2px; border:1px solid rgba(255,255,255,0.1);
   }
 
   /* MAIN */
-  .main { padding:16px 24px; display:flex; flex-direction:column; gap:13px; overflow:hidden; }
-  .m-section { display:flex; flex-direction:column; gap:7px; }
+  .main { padding:13px 20px; display:flex; flex-direction:column; gap:10px; overflow:hidden; }
+  .m-section { display:flex; flex-direction:column; gap:6px; }
   .m-title {
-    font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:2.5px;
-    color:var(--dark); border-bottom:2px solid var(--accent); padding-bottom:4px;
+    font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:2.5px;
+    color:var(--dark); border-bottom:2px solid var(--accent); padding-bottom:3px;
   }
-  .profil-text { font-size:12.5px; line-height:1.65; color:var(--text); }
+  .profil-text { font-size:11.5px; line-height:1.6; color:var(--text); }
 
-  .project-item { margin-bottom:8px; }
+  .project-item { margin-bottom:6px; }
   .project-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:2px; }
-  .project-name { font-size:13px; font-weight:600; color:var(--dark); }
+  .project-name { font-size:12px; font-weight:600; color:var(--dark); }
   .project-name a { color:var(--dark); text-decoration:none; }
   .project-status {
-    font-size:7.5px; font-weight:700; letter-spacing:0.8px;
-    padding:2px 7px; border-radius:2px; text-transform:uppercase; white-space:nowrap;
+    font-size:7px; font-weight:700; letter-spacing:0.8px;
+    padding:2px 6px; border-radius:2px; text-transform:uppercase; white-space:nowrap;
   }
   .status-cours   { background:rgba(255,153,0,0.12); color:var(--orange); border:1px solid rgba(255,153,0,0.3); }
   .status-publie  { background:rgba(46,125,82,0.1);  color:var(--green);  border:1px solid rgba(46,125,82,0.3); }
   .status-termine { background:rgba(26,95,168,0.1);  color:var(--blue);   border:1px solid rgba(26,95,168,0.3); }
 
-  .project-tags { display:flex; flex-wrap:wrap; gap:3px; margin-bottom:3px; }
+  .project-tags { display:flex; flex-wrap:wrap; gap:2px; margin-bottom:2px; }
   .project-tag {
-    font-size:10px; font-family:'IBM Plex Mono',monospace;
+    font-size:9.5px; font-family:'IBM Plex Mono',monospace;
     background:var(--light); color:var(--muted);
-    padding:1px 5px; border-radius:2px; border:1px solid var(--border);
+    padding:1px 4px; border-radius:2px; border:1px solid var(--border);
   }
-  .project-desc { font-size:11.5px; line-height:1.55; color:#3a4a5a; }
+  .project-desc { font-size:11px; line-height:1.5; color:#3a4a5a; }
 
-  .exp-item { margin-bottom:9px; }
+  .exp-item { margin-bottom:7px; }
   .exp-header { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:1px; }
-  .exp-title   { font-size:13px; font-weight:600; color:var(--dark); }
-  .exp-dates   { font-size:11px; font-family:'IBM Plex Mono',monospace; color:var(--muted); white-space:nowrap; }
-  .exp-company { font-size:11.5px; color:var(--accent2); font-weight:500; margin-bottom:3px; }
-  .exp-desc    { font-size:11.5px; line-height:1.55; color:#3a4a5a; }
+  .exp-title   { font-size:12px; font-weight:600; color:var(--dark); }
+  .exp-dates   { font-size:10.5px; font-family:'IBM Plex Mono',monospace; color:var(--muted); white-space:nowrap; }
+  .exp-company { font-size:11px; color:var(--accent2); font-weight:500; margin-bottom:2px; }
+  .exp-desc    { font-size:11px; line-height:1.5; color:#3a4a5a; }
 
   @media print {
     body { background:white; padding:0; }
@@ -154,7 +155,7 @@
       <div class="s-section">
         <div class="s-title">Certifications &amp; Formations</div>
         <div class="cert-item">
-          <div class="cert-name"><a href="https://www.credly.com/badges/01670bee-b653-4744-ba44-3c68ef7bf819/public_url" target="_blank" style="color:var(--white);text-decoration:none;">AWS Cloud Practitioner</a></div>
+          <div class="cert-name"><a href="https://www.credly.com/badges/01670bee-b653-4744-ba44-3c68ef7bf819/public_url" target="_blank">AWS Cloud Practitioner</a></div>
           <div class="cert-org">Amazon Web Services</div>
           <div class="cert-date">Avril 2026</div>
           <span class="cert-badge badge-ok">Certifié</span>
@@ -166,16 +167,9 @@
           <span class="cert-badge badge-prog">En préparation</span>
         </div>
         <div class="cert-item">
-          <div class="cert-name">Cyber Full-Stack</div>
-          <div class="cert-org">Jedha Bootcamp</div>
-          <div class="cert-date">Juin 2026</div>
-          <span class="cert-badge badge-form">Formation</span>
-        </div>
-        <div class="cert-item">
-          <div class="cert-name">Cyber Essentials</div>
-          <div class="cert-org">Jedha Bootcamp</div>
-          <div class="cert-date">Nov 2025</div>
-          <span class="cert-badge badge-ok">Obtenu</span>
+          <div class="cert-name">Jedha Bootcamp — Cybersécurité</div>
+          <div class="cert-org">Essentials (nov 2025) + Full-Stack (juin 2026)</div>
+          <span class="cert-badge badge-form">En cours</span>
         </div>
       </div>
 
@@ -213,12 +207,35 @@
             <span class="skill-tag">Linux</span><span class="skill-tag">Bash</span>
             <span class="skill-tag">TCP/IP</span><span class="skill-tag">DNS</span>
             <span class="skill-tag">Firewalls</span><span class="skill-tag">VPN</span>
+            <span class="skill-tag">Active Directory</span><span class="skill-tag">VLAN</span>
+            <span class="skill-tag">pfSense</span><span class="skill-tag">WireGuard</span>
           </div>
         </div>
         <div class="skill-group">
-          <div class="skill-group-name">Conteneurisation</div>
+          <div class="skill-group-name">Conteneurisation &amp; DevOps</div>
           <div class="skill-tags">
             <span class="skill-tag">Docker</span><span class="skill-tag">Docker Swarm</span>
+            <span class="skill-tag">Nginx</span><span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">GitHub Actions</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-name">Cybersécurité</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Wazuh</span><span class="skill-tag">Wireshark</span>
+            <span class="skill-tag">Nmap</span><span class="skill-tag">OpenCTI</span>
+            <span class="skill-tag">MITRE ATT&amp;CK</span><span class="skill-tag">OWASP</span>
+            <span class="skill-tag">OSINT</span><span class="skill-tag">APT</span>
+            <span class="skill-tag">Phishing Analysis</span><span class="skill-tag">Forensics</span>
+            <span class="skill-tag">Incident Response</span><span class="skill-tag">SQLi/XSS</span>
+            <span class="skill-tag">CTF (Jedha/TryHackMe)</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-name">Conformité &amp; GRC</div>
+          <div class="skill-tags">
+            <span class="skill-tag">RGPD</span><span class="skill-tag">CVE</span>
+            <span class="skill-tag">AWS Well-Architected</span><span class="skill-tag">CloudTrail</span>
           </div>
         </div>
       </div>
@@ -230,7 +247,7 @@
       <div class="m-section">
         <div class="m-title">Profil</div>
         <div class="profil-text">
-          AWS Cloud Practitioner certifié, préparation AWS Solutions Architect Associate en cours. En reconversion active vers le Cloud Engineering avec une double sensibilité infrastructure et sécurité. Parcours atypique - militaire, logistique, industrie - qui apporte rigueur opérationnelle, sens des priorités et gestion sous pression à des environnements cloud exigeants.
+          AWS Cloud Practitioner certifié, préparation AWS Solutions Architect Associate en cours. C'est au cours de la formation Full-Stack Jedha, en travaillant sur la sécurité des infrastructures cloud, que j'ai développé une affinité immédiate avec AWS. Cette double culture cyber/cloud m'a naturellement conduit à adopter une approche Security by Design sur l'ensemble de mes projets. Parcours atypique, militaire, logistique, industrie, qui apporte rigueur opérationnelle, sens des priorités et gestion sous pression à des environnements cloud exigeants.
         </div>
       </div>
 
@@ -298,7 +315,7 @@
             <div class="exp-dates">2025 - 2026</div>
           </div>
           <div class="exp-company">Michelin (financement reconversion)</div>
-          <div class="exp-desc">Reconversion vers le Cloud AWS financée par Michelin. Formation Jedha Bootcamp Full-Stack Cybersecurity, certifications AWS, projets d'infrastructure documentés sur GitHub.</div>
+          <div class="exp-desc">Reconversion vers le Cloud AWS financée par Michelin. Formation Jedha Bootcamp Full-Stack Cybersecurity. Domaines couverts : sécurité système (Linux, Windows, AD), sécurité réseau, sécurité web (OWASP, SQLi, XSS), Threat Intelligence (MITRE ATT&CK), Incident Response (Wazuh), Forensics, Cloud Security AWS, GRC. Certifications AWS et projets d'infrastructure documentés sur GitHub.</div>
         </div>
 
         <div class="exp-item">
