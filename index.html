@@ -366,6 +366,36 @@
                     </div>
                 </div>
 
+                <!-- PROJET 03 TERMINÉ -->
+                <div style="background:var(--card);border:1px solid rgba(52,211,153,0.3);border-radius:14px;padding:32px;">
+                    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:16px;">
+                        <div style="display:flex;align-items:center;gap:12px;">
+                            <span style="font-size:1.5rem;">🫥</span>
+                            <div>
+                                <p style="font-family:'Space Mono',monospace;font-size:0.68rem;color:#34d399;letter-spacing:0.1em;margin-bottom:4px;">PROJET 03 · TERMINÉ</p>
+                                <h3 style="font-size:1.1rem;font-weight:700;color:var(--text);">Photo Anonymizer — Floutage de visages serverless</h3>
+                            </div>
+                        </div>
+                        <a href="https://github.com/Jimmy-Barbier/projet-03-photo-anonymizer-aws" target="_blank"
+                           style="display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:rgba(52,211,153,0.1);border:1px solid rgba(52,211,153,0.3);border-radius:8px;color:#34d399;text-decoration:none;font-family:'Space Mono',monospace;font-size:0.72rem;font-weight:700;">
+                            Voir sur GitHub →
+                        </a>
+                    </div>
+                    <p style="color:var(--text-dim);font-size:0.95rem;line-height:1.65;margin-bottom:16px;">
+                        Pipeline serverless d'anonymisation de photos, construit entièrement dans la console AWS. Un upload S3 déclenche une fonction Lambda qui appelle Amazon Rekognition pour détecter les visages, applique un floutage via Pillow, puis stocke le résultat dans un second bucket et notifie par email via SNS. Sécurité durcie : chiffrement SSE-KMS, bucket policy imposant le HTTPS, lifecycle policy de minimisation des données, logs d'accès S3 et rôle IAM en moindre privilège.
+                    </p>
+                    <div style="display:flex;flex-wrap:wrap;gap:8px;">
+                        <span style="font-family:'Space Mono',monospace;font-size:0.68rem;padding:4px 10px;border-radius:6px;background:rgba(56,189,248,0.08);border:1px solid rgba(56,189,248,0.2);color:var(--text-dim);">Lambda</span>
+                        <span style="font-family:'Space Mono',monospace;font-size:0.68rem;padding:4px 10px;border-radius:6px;background:rgba(56,189,248,0.08);border:1px solid rgba(56,189,248,0.2);color:var(--text-dim);">S3</span>
+                        <span style="font-family:'Space Mono',monospace;font-size:0.68rem;padding:4px 10px;border-radius:6px;background:rgba(56,189,248,0.08);border:1px solid rgba(56,189,248,0.2);color:var(--text-dim);">Rekognition</span>
+                        <span style="font-family:'Space Mono',monospace;font-size:0.68rem;padding:4px 10px;border-radius:6px;background:rgba(56,189,248,0.08);border:1px solid rgba(56,189,248,0.2);color:var(--text-dim);">SNS</span>
+                        <span style="font-family:'Space Mono',monospace;font-size:0.68rem;padding:4px 10px;border-radius:6px;background:rgba(56,189,248,0.08);border:1px solid rgba(56,189,248,0.2);color:var(--text-dim);">IAM</span>
+                        <span style="font-family:'Space Mono',monospace;font-size:0.68rem;padding:4px 10px;border-radius:6px;background:rgba(56,189,248,0.08);border:1px solid rgba(56,189,248,0.2);color:var(--text-dim);">KMS</span>
+                        <span style="font-family:'Space Mono',monospace;font-size:0.68rem;padding:4px 10px;border-radius:6px;background:rgba(56,189,248,0.08);border:1px solid rgba(56,189,248,0.2);color:var(--text-dim);">Python</span>
+                        <span style="font-family:'Space Mono',monospace;font-size:0.68rem;padding:4px 10px;border-radius:6px;background:rgba(56,189,248,0.08);border:1px solid rgba(56,189,248,0.2);color:var(--text-dim);">Security by Design</span>
+                    </div>
+                </div>
+
                 <!-- DÉPÔT TERRAFORM -->
                 <div style="background:var(--card);border:1px solid rgba(251,191,36,0.3);border-radius:14px;padding:32px;">
                     <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:16px;">
